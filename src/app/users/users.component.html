@@ -1,0 +1,42 @@
+<!-- Future user details page set up 
+<div>
+    <label for="name">User name: </label>
+    <input id="name" [(ngModel)]="user.name" placeholder="name">    
+</div>
+
+<h2>{{ user.name | titlecase }} Details</h2>
+<div><span>id: </span>{{ user.id }}</div>
+<div><span>name: </span>{{ user.name }}</div>
+-->
+
+<!-- Future list users page
+<h2>System Users</h2>
+<ul class="heroes">
+  <li *ngFor="let user of users">
+    <button type="button">
+      <span class="badge">{{ user.id }}</span>
+      <span class="name">{{ user.name }}</span>
+    </button>
+  </li>
+</ul>
+-->
+
+<!-- Future Edit Users screen -->
+<h2>System Users</h2>
+<ul class="heroes">
+  <li *ngFor="let user of users">
+    <button [class.selected]="user === selectedUser" type="button" (click)="onSelect(user)">
+      <span class="badge">{{user.id}}</span>
+      <span class="name">{{user.name}}</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="selectedUser">
+  <h2>{{selectedUser.name | uppercase}} Details</h2>
+  <div>id: {{selectedUser.id}}</div>
+  <div>
+    <label for="hero-name">User name: </label>
+    <input id="hero-name" [(ngModel)]="selectedUser.name" placeholder="name">
+  </div>
+</div>
