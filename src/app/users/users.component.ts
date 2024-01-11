@@ -12,7 +12,7 @@ export class UsersComponent {
   selectedUser?: User;
   users: User[] = [];
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
     this.getUsers();
@@ -23,6 +23,9 @@ export class UsersComponent {
   }
 
   getUsers(): void {
-    this.users = this.userService.getUsers();
+    this.userService.getUsers()
+      .subscribe(
+        (users) => this.users = users
+      );
   }
 }
