@@ -4,7 +4,7 @@
   <li *ngFor="let timeEntry of timeEntries.reverse()">
     <button type="button">
       <span class="badge">{{ timeEntry.id }}</span
-      >, <span class="date">{{ timeEntry.date | date : "MMM dd, yyyy" }}</span
+      >, <span class="date">{{ timeEntry.date | date : "MMMM dd, yyyy" }}</span
       >, <span class="hoursWorked">{{ timeEntry.hoursWorked }}</span
       >, <span class="userId">{{ timeEntry.userId }}</span
       >,
