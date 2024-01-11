@@ -7,12 +7,14 @@ import { UsersComponent } from './users/users.component';
 import { FormsModule } from '@angular/forms';
 import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     UserDetailComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
