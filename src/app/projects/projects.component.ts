@@ -8,17 +8,12 @@ import { ProjectService } from '../services/project/project.service';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  selectedProject?: Project
   projects: Project[] = []
 
   constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
     this.getProjects();
-  }
-
-  onSelect(project: Project): void {
-    this.selectedProject = project;
   }
 
   getProjects(): void {
