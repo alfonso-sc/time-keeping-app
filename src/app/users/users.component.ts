@@ -8,17 +8,12 @@ import { UserService } from '../services/user/user.service';
   styleUrl: './users.component.css'
 })
 export class UsersComponent {
-  selectedUser?: User;
   users: User[] = [];
 
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
     this.getUsers();
-  }
-
-  onSelect(user: User): void {
-    this.selectedUser = user;
   }
 
   getUsers(): void {
