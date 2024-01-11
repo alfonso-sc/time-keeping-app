@@ -10,6 +10,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     MessagesComponent,
     ProjectsComponent,
     ProjectDetailsComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
