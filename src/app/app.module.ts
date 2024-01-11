@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { NgFor, NgIf, UpperCasePipe } from '@angular/common';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { MessagesComponent } from './messages/messages.component';
     UsersComponent,
     UserDetailComponent,
     MessagesComponent,
+    ProjectsComponent,
+    ProjectDetailsComponent,
   ],
   imports: [
     BrowserModule,
