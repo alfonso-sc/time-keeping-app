@@ -11,6 +11,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TimeEntriesComponent } from './time-entries/time-entries.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ProjectsComponent,
     ProjectDetailsComponent,
     DashboardComponent,
+    TimeEntriesComponent,
   ],
   imports: [
     BrowserModule,
