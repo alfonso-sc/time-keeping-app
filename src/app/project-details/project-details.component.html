@@ -1,9 +1,9 @@
 <div *ngIf="project">
-  <h2>{{ project.name | uppercase }} Details</h2>
+  <h2>{{ project.name | uppercase }} Project Details</h2>
   <div><span>id: </span>{{ project.id }}</div>
   <div>
     <label for="hero-name">Project name: </label>
-    <input id="hero-name" [(ngModel)]="project.name" placeholder="name" />
+    <input id="hero-name" [(ngModel)]="project.name" placeholder="Project name" />
   </div>
   <div>
     <label for="hero-name">Project description: </label>
@@ -13,4 +13,5 @@
       placeholder="description"
     />
   </div>
+  <button type="button" (click)="goBack()">go back</button>
 </div>

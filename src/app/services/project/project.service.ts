@@ -16,4 +16,10 @@ export class ProjectService {
     const projects = of(PROJECTS);
     return projects;
   }
+
+  getProject(id: number): Observable<Project> {
+    const project = PROJECTS.find((p) => p.id === id)!;
+    this.messageService.add(`ProjectService: fetched project id=${id}`);
+    return of(project);
+  }
 }
