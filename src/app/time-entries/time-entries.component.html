@@ -3,12 +3,16 @@
 <ul class="heroes">
   <li *ngFor="let timeEntry of timeEntries.reverse()">
     <button type="button">
-      <span class="badge">{{ timeEntry.id }}</span
-      >, <span class="date">{{ timeEntry.date | date : "MMMM dd, yyyy" }}</span
-      >, <span class="hoursWorked">{{ timeEntry.hoursWorked }}</span
-      >, <span class="userId">{{ timeEntry.userId }}</span
-      >,
-      <span class="projectId">{{ timeEntry.projectId }}</span>
+      <span class="badge">{{ timeEntry.id }}, </span>
+      <span class="userId">User ID: {{ timeEntry.userId }}, </span>
+      <span class="projectId">Project ID: {{ timeEntry.projectId }}, </span>
+      <span class="date"
+        >Date: {{ timeEntry.date | date : "MMMM dd, yyyy" }},
+      </span>
+      <span class="hoursWorked"
+        >Hours Worked: {{ timeEntry.hoursWorked }},
+      </span>
+      <span class="description">Description: {{ timeEntry.description }}</span>
     </button>
   </li>
 </ul>
