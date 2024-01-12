@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TimeEntriesComponent } from './time-entries/time-entries.component';
+import { TimeEntryFormComponent } from './time-entry-form/time-entry-form.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TimeEntriesComponent } from './time-entries/time-entries.component';
     ProjectDetailsComponent,
     DashboardComponent,
     TimeEntriesComponent,
+    TimeEntryFormComponent,
   ],
   imports: [
     BrowserModule,
